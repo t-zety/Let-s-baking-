@@ -1,0 +1,309 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4e8d9;
+  color: #593d37;
+  font-family: Georgia, serif;
+}
+
+.game {
+  width: min(100%, 760px);
+  margin: auto;
+  padding: 18px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+header small, .order-details small {
+  color: #a66e61;
+  letter-spacing: 2px;
+  font: 10px Arial, sans-serif;
+}
+
+h1 {
+  margin: 5px 0;
+  font-size: clamp(22px, 5vw, 34px);
+  color: #76473f;
+}
+
+.wallet {
+  display: flex;
+  gap: 8px;
+}
+
+.wallet span {
+  background: #fff8ee;
+  padding: 10px 12px;
+  border-radius: 20px;
+  border: 1px solid #e7c9ae;
+}
+
+.shop {
+  overflow: hidden;
+  border: 3px solid #b97c62;
+  border-radius: 16px;
+  background: #f8d9b8;
+  box-shadow: 0 7px 0 #d8b69a;
+}
+
+.window {
+  height: 155px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(#b9dcd4, #e7eee0);
+  border-bottom: 7px solid #a96d51;
+}
+
+.sun {
+  position: absolute;
+  top: 12px;
+  right: 22px;
+  font-size: 37px;
+  color: #e5b65c;
+}
+
+.window-text {
+  font-size: clamp(23px, 6vw, 39px);
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #fff9e9;
+  text-shadow: 2px 3px #a66e61;
+}
+
+.window-flowers {
+  margin-top: 8px;
+  color: #bc7d91;
+  letter-spacing: 12px;
+  font-size: 20px;
+}
+
+.shelf {
+  padding: 15px 12px 20px;
+  background: #efc7a4;
+}
+
+.shelf-title {
+  text-align: center;
+  font: bold 10px Arial, sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 13px;
+  color: #855340;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.pastry {
+  min-width: 0;
+  min-height: 122px;
+  padding: 9px 3px;
+  border: 2px solid #d9ad89;
+  border-radius: 12px;
+  background: #fff4e6;
+  color: #67463b;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  touch-action: manipulation;
+}
+
+.pastry.selected {
+  border-color: #a95f6e;
+  background: #f9dce0;
+  box-shadow: 0 0 0 2px #a95f6e33;
+}
+
+.pastry .food {
+  font-size: clamp(27px, 7vw, 40px);
+}
+
+.pastry strong {
+  font-size: 12px;
+}
+
+.pastry small {
+  font: 11px Arial, sans-serif;
+  color: #a66e61;
+}
+
+.counter {
+  min-height: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #a96d51;
+  color: #fff0d7;
+  font-size: 13px;
+}
+
+.order-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 23px;
+  padding: 16px;
+  background: #fff9f0;
+  border: 1px solid #e4c9b4;
+  border-radius: 14px;
+}
+
+.customer {
+  flex-shrink: 0;
+  width: 65px;
+  height: 65px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #f2d8d0;
+  font-size: 39px;
+}
+
+.order-details h2 {
+  margin: 7px 0;
+  font-size: 17px;
+}
+
+.order-details p, .upgrade p {
+  margin: 0;
+  color: #997568;
+  font: 12px/1.5 Arial, sans-serif;
+}
+
+#feedback {
+  margin-top: 13px;
+  min-height: 42px;
+  padding: 12px;
+  border-radius: 9px;
+  background: #e5eee0;
+  color: #536c4e;
+  font: 13px/1.5 Arial, sans-serif;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+button {
+  font-family: inherit;
+}
+
+.actions button, #upgrade {
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 9px;
+  background: #875346;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.actions button {
+  flex: 1;
+}
+
+.actions button:active, #upgrade:active {
+  transform: scale(.97);
+}
+
+#newDay {
+  background: #bd8b72;
+}
+
+.upgrade {
+  margin-top: 20px;
+  padding: 16px;
+  border: 1px solid #dfc4ac;
+  border-radius: 12px;
+  background: #f8eee2;
+}
+
+.upgrade h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
+}
+
+#upgrade {
+  margin-top: 12px;
+  background: #657d5a;
+  font-size: 12px;
+}
+
+#upgrade:disabled {
+  opacity: .55;
+  cursor: not-allowed;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 2px 4px;
+  color: #a17e6d;
+  font: 10px Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 430px) {
+  .game {
+    padding: 12px;
+  }
+
+  .menu {
+    gap: 5px;
+  }
+
+  .pastry {
+    min-height: 112px;
+  }
+
+  .pastry strong {
+    font-size: 10px;
+  }
+
+  .pastry small {
+    font-size: 10px;
+  }
+
+  .order-card {
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .customer {
+    width: 52px;
+    height: 52px;
+    font-size: 31px;
+  }
+
+  .order-details h2 {
+    font-size: 15px;
+  }
+
+  #upgrade {
+    width: 100%;
+  }
+}
