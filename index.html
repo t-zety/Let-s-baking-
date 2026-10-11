@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zety's Little Boulangerie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <header>
+      <div>
+        <small>PETIT PAIN, GRAND PLAISIR</small>
+        <h1>Zety's Little Boulangerie</h1>
+      </div>
+      <div class="wallet">
+        <span>🪙 <b id="coins">20</b></span>
+        <span>⭐ <b id="reputation">0</b></span>
+      </div>
+    </header>
+
+    <section class="shop">
+      <div class="window">
+        <span class="sun">☀</span>
+        <span class="window-text">BONJOUR!</span>
+        <span class="window-flowers">✿ ❀ ✿</span>
+      </div>
+
+      <div class="shelf">
+        <div class="shelf-title">FRESH FROM THE OVEN</div>
+        <div id="menu" class="menu"></div>
+      </div>
+
+      <div class="counter">
+        <span>✿</span>
+        <span>Freshly baked with love</span>
+        <span>✿</span>
+      </div>
+    </section>
+
+    <section class="order-card">
+      <div class="customer" id="customer">👩🏻‍🦰</div>
+      <div class="order-details">
+        <small id="customerName">YOUR FIRST CUSTOMER</small>
+        <h2 id="orderText">I'd love a croissant, s'il vous plaît!</h2>
+        <p id="orderHint">Tap the matching pastry above.</p>
+      </div>
+    </section>
+
+    <div id="feedback" role="status">
+      Welcome, baker! Your first customer is waiting.
+    </div>
+
+    <section class="actions">
+      <button id="serve">Serve order</button>
+      <button id="newDay">Next customer</button>
+    </section>
+
+    <section class="upgrade">
+      <div>
+        <h3>Bakery upgrades</h3>
+        <p id="upgradeDescription">Buy a better oven to earn more per order.</p>
+      </div>
+      <button id="upgrade">Upgrade oven · 30 coins</button>
+    </section>
+
+    <footer>
+      <span id="day">DAY 1</span>
+      <span>Fait avec amour ♡</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
